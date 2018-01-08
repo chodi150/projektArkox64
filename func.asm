@@ -144,9 +144,7 @@ next:
         fcomip
         fstp
         ja drawLoop
-        cmp ecx, 0
-        jz end
-        ;dec ecx
+
         mov r8, rsi 					;kopia szerokosci
         cvtsi2sd xmm10, r8
         movsd [rbp-8], xmm10 			; wartosc pochodne w punkcie
